@@ -1,0 +1,79 @@
+{
+	"name": "typescriptFacility",
+	"displayName": "Typescript Toolbox of Productivity",
+	"description": "",
+	"version": "0.0.1",
+	"icon": "",
+	"publisher": "richardzampieriprog",
+	"engines": {
+		"vscode": "^1.46.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "typescript",
+				"path": "./snippets/general.json"
+			}
+		],
+		"commands": [
+			{
+				"command": "typescriptFacility.createClass",
+				"title": "Typescript: Create Class"
+			},
+			{
+				"command": "typescriptFacility.createInterface",
+				"title": "Typescript: Create Interface"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"group": "navigation@1",
+					"command": "typescriptFacility.createClass"
+				},
+				{
+					"group": "navigation@1",
+					"command": "typescriptFacility.createInterface"
+				}
+			],
+			"commandPalette": [
+				{
+					"command": "typescriptFacility.createClass",
+					"when": "false"
+				},
+				{
+					"command": "typescriptFacility.createInterface",
+					"when": "false"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "yarn run compile && yarn run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^15.12.1",
+		"@types/vscode": "^1.46.0",
+		"@typescript-eslint/eslint-plugin": "^4.14.1",
+		"@typescript-eslint/parser": "^4.14.1",
+		"eslint": "^7.19.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"typescript": "^4.1.3",
+		"vscode-test": "^1.5.0"
+	}
+}

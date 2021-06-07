@@ -1,0 +1,277 @@
+{
+    "-> let variable": {
+        "prefix": "let",
+        "body": [
+            "let ${1:variableName}: ${2:dataType} = ${3: value};",
+            "$0"
+        ],
+        "description": "variable declaration using `let`"
+    },
+    "-> const variable": {
+        "prefix": "const",
+        "body": [
+            "const ${1:constName}: ${2:dataType} = ${3: value};",
+            "$0"
+        ],
+        "description": "variable declaration using `const`"
+    },
+    "-> enumerator": {
+        "prefix": "enum",
+        "body": [
+            "enum ${1:enumName}",
+            "{",
+            "\t$0",
+            "};"
+        ],
+        "description": "enumeration `enum`"
+    },
+    "-> if statement": {
+        "prefix": "if",
+        "body": [
+            "if (${1:true}) {",
+            "\t$0",
+            "};"
+        ],
+        "description": "if conditional `if`"
+    },
+    "-> while loop": {
+        "prefix": "while",
+        "body": [
+            "while (${1:true}) {",
+            "\t$0",
+            "};"
+        ],
+        "description": "loop `while`"
+    },
+    "-> do/while loop": {
+        "prefix": "do",
+        "body": [
+            "do {",
+            "\t$0",
+            "} while (${1:true});"
+        ],
+        "description": "loop `do while`"
+    },
+    "-> For loop": {
+        "prefix": "for",
+        "body": [
+            "for (let ${1:i}:number = 0; $1 < ${2:length}; $1++)",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "loop `for`"
+    },
+    "-> For in loop": {
+        "prefix": "fori",
+        "body": [
+            "for (${1:const} ${2:key} in ${3:container})",
+            "{",
+            "\t${4:console.log($3[key]);}",
+            "\t$0",
+            "}"
+        ],
+        "description": "loop `for in`"
+    },
+    "-> Switch": {
+        "prefix": "switch",
+        "body": [
+            "switch (${1:condition})",
+            "{",
+            "\tcase ${2:value}:",
+            "\t$0",
+            "\tbreak;",
+            "\tdefault:",
+            "\tbreak;",
+            "}"
+        ],
+        "description": "create switch statement `switch`"
+    },
+    "-> Super": {
+        "prefix": "sup",
+        "body": [
+            "super();",
+            "\t$0"
+        ],
+        "description": "super for derived class `super();`"
+    },
+    "-> Console.log": {
+        "prefix": "log",
+        "body": [
+            "console.log('${1:content}');",
+            "$0"
+        ],
+        "description": "Console Log `console.log()`"
+    },
+    "-> Console.log Interpolated": {
+        "prefix": "logi",
+        "body": [
+            "console.log(`${${1:content}}`);",
+            "$0"
+        ],
+        "description": "Console Log Interpolation `console.log();`"
+    },
+    "-> Array": {
+        "prefix": "arr",
+        "body": [
+            "let ${1:arrayName}:${2:type}[];",
+            "$0"
+        ],
+        "description": "Base Array"
+    },
+    "-> Array Initialized": {
+        "prefix": "arri",
+        "body": [
+            "let ${1:arrayName}:${2:type}[] = [$3];",
+            "$0"
+        ],
+        "description": "Base Array"
+    },
+    "-> Array Constructor": {
+        "prefix": "arrc",
+        "body": [
+            "let ${1:arrayName}:${2:type}[] = new Array($3);",
+            "$0"
+        ],
+        "description": "Base Array"
+    },
+    "-> Tuples": {
+        "prefix": "tuple",
+        "body": [
+            "let ${1:tupleName}:[${2:type}, ${3:type}];",
+            "$0"
+        ],
+        "description": "Tuple container"
+    },
+    "-> Tuple Array": {
+        "prefix": "tparr",
+        "body": [
+            "let ${1:tupleName}: Array<[${2:type}, ${3:type}]> = new Array($4);",
+            "$0"
+        ],
+        "description": "Tuple Array"
+    },
+    "-> Union": {
+        "prefix": "union",
+        "body": [
+            "let ${1:unionName}: (${2:type} | ${3:type});",
+            "$0"
+        ],
+        "description": "Union: more than one data type for a variable"
+    },
+    "-> Arrow Function": {
+        "prefix": "arw",
+        "body": [
+            "(${1:parameter}): ${2:void} => {$0};"
+        ],
+        "description": "Fat Arrow Function"
+    },
+    "-> Object": {
+        "prefix": "obj",
+        "body": [
+            "let ${1:objName} = {$2};",
+            "$0"
+        ],
+        "description": "Object with no initialization"
+    },
+    "-> Object Initialize": {
+        "prefix": "obji",
+        "body": [
+            "const ${1:objName}: {$2} = {$3};",
+            "$0"
+        ],
+        "description": "Object initialized ex.: const objName: {name: string, age: number} = {name:'user', age: 10}"
+    },
+    "-> Map Container": {
+        "prefix": "map",
+        "body": [
+            "const ${1:mapName} = new Map<${2:type}, ${3:type}>();",
+            "$0"
+        ],
+        "description": "Map container stores key-value pair. Ex: Map<type, type>()"
+    },
+    "-> Set Container": {
+        "prefix": "set",
+        "body": [
+            "const ${1:setName} = new Set<${2:type}>();",
+            "$0"
+        ],
+        "description": "Set container is an ordered list with no duplicates. Ex: Set<type>()"
+    },
+    "-> Weak Map": {
+        "prefix": "wmap",
+        "body": [
+            "const ${1:weakMapName} = new WeakMap<${2:object}, ${3:type}>();",
+            "$0"
+        ],
+        "description": "Weak map, key-value pairs where keys must be objects. Ex: WeakMap<{}, value>()"
+    },
+    "-> Weak Set": {
+        "prefix": "wset",
+        "body": [
+            "const ${1:setName} = new WeakSet<{${2:type}}>();",
+            "$0"
+        ],
+        "description": "Ex: Set<{}>()"
+    },
+    "-> Class definition": {
+        "prefix": "class",
+        "body": [
+            "export class ${1:className} {",
+            "\t$0",
+            "\tconstructor() {};",
+            "};"
+        ],
+        "description": "Creating a class definition"
+    },
+    "-> Abstract Class definition": {
+        "prefix": "aclass",
+        "body": [
+            "export abstract class ${1:className} {",
+            "\t$0",
+            "\tconstructor() {};",
+            "};"
+        ],
+        "description": "Creating an abstract class definition"
+    },
+    "-> Class data member": {
+        "prefix": "prp",
+        "body": [
+            "private ${1:property}: ${2:type} = ${3:value};"
+        ],
+        "description": "Class property creation"
+    },
+    "-> Class read only data member": {
+        "prefix": "prpr",
+        "body": [
+            "private readonly ${1:property}: ${2:type} = ${3:value};"
+        ],
+        "description": "Read only class data member"
+    },
+    "-> Method Class": {
+        "prefix": "method",
+        "body": [
+            "public ${1:methodName}(): ${2:returnType} {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Method class"
+    },
+    "-> Abstract Method Class": {
+        "prefix": "amethod",
+        "body": [
+            "public abstract ${1:methodName}(): ${2:returnType};",
+            "$0"
+        ],
+        "description": "Abstract Method class"
+    },
+    "-> Function standard": {
+        "prefix": "function",
+        "body": [
+            "export function ${1:functionName}(): ${2:returnType} {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Standard function"
+    }
+}
