@@ -1,18 +1,33 @@
 {
 	"name": "typescriptFacility",
 	"displayName": "Typescript Toolbox of Productivity",
-	"description": "",
-	"version": "0.0.1",
-	"icon": "",
+	"description": "The complete set of tools for Typescript development",
+	"version": "1.0.0",
+	"icon": "icon.png",
 	"publisher": "richardzampieriprog",
+	"license": "SEE LICENSE IN LICENSE.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rsaz/typescriptFacility"
+	},
 	"engines": {
 		"vscode": "^1.46.0"
 	},
 	"categories": [
-		"Other"
+		"Programming Languages",
+		"Snippets",
+		"Formatters",
+		"Extension Packs"
+	],
+	"extensionKind": [
+		"ui"
 	],
 	"activationEvents": [
 		"*"
+	],
+	"keywords": [
+		"Typescript",
+		"Snippet"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
