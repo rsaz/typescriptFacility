@@ -1,71 +1,95 @@
-# Typescript Toolbox of Productivity { README IN CONSTRUCTION }
+![icon](https://github.com/rsaz/TwitchBot/blob/master/icon.png)
 
-This is the README for your extension "typescriptFacility". After writing up a brief description, we recommend including the following sections.
+<h2 align="center">
+Typescript Toolbox of Productivity
+</h2>
+<h3 align="center">
+	<a href="https://img.shields.io/badge/type-Open Project-green">
+		<img src="https://img.shields.io/badge/type-Open Project-green" align="center">
+	</a>
+    <a href="https://img.shields.io/github/repo-size/rsaz/typescriptFacility">
+        <img src="https://img.shields.io/github/repo-size/rsaz/typescriptFacility" align="center"/>
+    </a>	
+    <a href="https://img.shields.io/github/contributors/rsaz/typescriptFacility.svg">
+        <img src="https://img.shields.io/github/contributors/rsaz/typescriptFacility.svg" align="center"/>
+    </a>
+    <a href="https://img.shields.io/github/stars/rsaz/typescriptFacility?style=social">
+        <img src="https://img.shields.io/github/stars/rsaz/typescriptFacility?style=social" align="center"/>
+    </a>	
+	<br>
+</h3>
 
-## Features
+## Goal
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+> - Typescript Toolbox aims to increase your Typescript development productivity providing speed and facilities.
+> - Creation of Class and Interface through contextual menu in left side VSCODE bar, Snippets, smart comments, Todo List, project boilerplate options, design patters snippets etc. These are some of the features that is been delivered in this first release and the others are coming next.
 
-For example if there is an image subfolder under your extension project workspace:
+## Changelog
 
-\!\[feature X\]\(images/feature-x.png\)
+> [Click here](https://github.com/rsaz/typescriptFacility/blob/main/CHANGELOG.md)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## What's new in 1.0.0
 
-## Requirements
+> - **_Snippets_**: smart snippets with all need commands, including containers and patterns
+> - **_Contextual Menu_**: Create classes and interfaces clicking with your mouse in your project tree structure
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Current features
 
-## Extension Settings
+> - First release!
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+> ### Create Class and Interfaces
+>
+> ![Colored comments](https://github.com/rsaz/typescriptFacility/blob/main/media/releasefeature.png?raw=true)
 
-For example:
+> ### General Snippets
 
-This extension contributes the following settings:
+| Command      | Description                      |
+| ------------ | :------------------------------- |
+| **let**      | variable declaration using `let` |
+| **const**    | const container using `const`    |
+| **enum**     | enumeration `enum`               |
+| **if**       | if statement                     |
+| **while**    | while loop                       |
+| **do**       | do while loop                    |
+| **for**      | for loop                         |
+| **fori**     | for in loop                      |
+| **switch**   | switch statement                 |
+| **super**    | super() for derived class        |
+| **log**      | console log                      |
+| **logi**     | console log interpolated         |
+| **arr**      | base array                       |
+| **arri**     | array initialized                |
+| **tuple**    | tuple container                  |
+| **tparr**    | tuple array                      |
+| **union**    | union: dataType1 \| dataType2    |
+| **arw**      | fat arrow function               |
+| **obj**      | object with no initialization    |
+| **obji**     | object initialized               |
+| **map**      | map container                    |
+| **set**      | set container                    |
+| **wmap**     | weakMap container                |
+| **wset**     | weakSet container                |
+| **class**    | class definition                 |
+| **aclass**   | abstract class definition        |
+| **prp**      | class property                   |
+| **prpr**     | class readonly property          |
+| **method**   | class method                     |
+| **amethod**  | abstract method                  |
+| **function** | standard function                |
 
-- `myExtension.enable`: enable/disable this extension
-- `myExtension.thing`: set to `blah` to do something
+## Do you want to contribute?
 
-## Known Issues
+### Guidelines
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-- [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-- Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-- Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+> 1. **Fork** the original repository to your own repository
+> 2. **Clone** it to your local
+> 3. **Contribute to it**
+> 4. **Push** it to your remote repo
+> 5. Send a **PR** `[Pull Request]` to the main repo
+> 6. Your contribution will be evaluated then we will merge your changes with the original repository. ❤
 
 ### For more information
 
-- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+- [Richard Zampieri](https://github.com/rsaz)
 
 **Enjoy!**

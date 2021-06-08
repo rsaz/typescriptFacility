@@ -27,7 +27,8 @@
 	],
 	"keywords": [
 		"Typescript",
-		"Snippet"
+		"Snippet",
+		"productivity"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
