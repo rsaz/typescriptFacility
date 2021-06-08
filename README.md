@@ -1,4 +1,4 @@
-![icon](https://github.com/rsaz/TwitchBot/blob/master/icon.png)
+<img align="right" src="https://github.com/rsaz/typescriptFacility/blob/main/icon.png" width="100" height="100">
 
 <h2 align="center">
 Typescript Toolbox of Productivity
@@ -39,7 +39,7 @@ Typescript Toolbox of Productivity
 
 > ### Create Class and Interfaces
 >
-> ![Colored comments](https://github.com/rsaz/typescriptFacility/blob/main/media/releasefeature.png?raw=true)
+> ![Colored comments](https://github.com/rsaz/typescriptFacility/blob/main/media/releasefeature.PNG?raw=true)
 
 > ### General Snippets
 
