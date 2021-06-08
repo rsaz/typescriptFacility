@@ -8,7 +8,7 @@ Typescript Toolbox of Productivity
 		<img src="https://img.shields.io/badge/type-Open Project-green" align="center">
 	</a>
     <a href="https://img.shields.io/github/repo-size/rsaz/typescriptFacility">
-        <img src="https://img.shields.io/github/repo-size/rsaz/typescriptFacility" align="center"/>
+        <img src="https://img.shields.io/github/repo-size/rsaz/typescriptFacility?style=flat-square" align="center"/>
     </a>	
     <a href="https://img.shields.io/github/contributors/rsaz/typescriptFacility.svg">
         <img src="https://img.shields.io/github/contributors/rsaz/typescriptFacility.svg" align="center"/>
