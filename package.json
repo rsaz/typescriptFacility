@@ -46,6 +46,11 @@
 			{
 				"command": "typescriptFacility.createInterface",
 				"title": "Typescript: Create Interface"
+			},
+			{
+				"command": "typescriptFacility.createProject",
+				"title": "App Launch",
+				"category": "Typescript"
 			}
 		],
 		"menus": {
